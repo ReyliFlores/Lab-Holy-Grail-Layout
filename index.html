@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Holy Grial Layout</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+    
+    header {
+
+width: 90%;
+
+height: 100px;
+
+background-color: black;
+
+border: 3px solid white;
+
+padding: 10px;
+
+margin: 25px;
+
+color:white;
+
+}
+
+
+
+nav {
+
+position: fixed;
+
+width: 90%;
+
+height: 50px;
+
+background-color: gold;
+
+position: fixed;
+
+top: 170px;
+
+left: 35px;
+
+}
+
+
+
+article {
+
+width: 65%;
+
+height: 200px;
+
+background-color: grey;
+
+border: 5px solid black;
+
+position: relative;
+
+top: 15px;
+
+}
+
+
+
+aside {
+
+width: 40%;
+
+height: 420px;
+
+background-color: goldenrod;
+
+position: absolute;
+
+left: 50%;
+
+right: 10%;
+
+top: 235px;
+
+}
+
+
+
+footer {
+
+width: 100%;
+
+height: 50px;
+
+background-color: black;
+
+position: fixed;
+
+bottom: 0px;
+
+color: white;
+
+
+}
+
+
+
+.articles {
+
+position: relative;
+
+left: 30px;
+
+top: 45px;
+
+width: 65%;
+
+height: 70%;
+
+}
+
+</style>
+<script src=""></script>
+<body>
+    <header>The Header provides the tools for navigation and sets the theme for the website. The Header element is by default at a static positioning. This means that the element is positioned to the normal flow of the document and it wont move relative to other elements. This element can only be moved if padding or margin CSS code is applied.</header>
+
+    <nav>The nav element is at a fixed position which means when scrolling, the elemnt will remain in its place. The CSS code such as top:0 and left:0 ensures that the lement stays at the top left corener of the web page. </nav>
+
+    <div>
+
+        <div class="articles">
+
+            <article>The articles element positioning is relative so that the element can be displaced at left:30px and top:45px. The relative positioning allows for desplcaement of any element.</article>
+
+            <article>This is just another article  element that is just related to the fisrt article element. The only difference is that it is shifted from the top by 45 pixels.</article>
+
+        </div>
+
+    <aside>For the aside element, it uses the absolute positioning element so that it removes itslef from the normal flow of the documnet. It can be displaced while using the nearest element and in this case, it would be the articles element. </aside>
+
+    </div>
+
+    <footer>The footer also has static positioning just like the header. Instead of the footer being at the top left of the page like the header, it will remain at the bottom of the page.</footer>
+</body>
+</html>
